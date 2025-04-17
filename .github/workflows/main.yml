@@ -1,0 +1,22 @@
+name: download
+
+on:
+  workflow_dispatch:
+
+jobs:
+  download:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: download file
+      run: |
+        wget -O alittletotheleft.rar http://fs23.megadb.xyz:8080/d/4tnapsyoy5vxygoid3w3lb26gxlgcfytbmasqlhoywzdh53s63nbduh6okhzzuj5kaeibjjo/A-Little-to-the-Left-SteamRIP.com.rar
+
+    - name: upload as artifact
+      uses: actions/upload-artifact@v3
+      with:
+        name: alittletotheleft
+        path: alittletotheleft.rar
