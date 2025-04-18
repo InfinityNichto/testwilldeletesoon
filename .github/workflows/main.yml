@@ -13,7 +13,7 @@ jobs:
 
     - name: download file
       run: |
-        wget -O alittletotheleft.rar http://fs23.megadb.xyz:8080/d/4tnapsyoy5vxygoid3w3lb26gxlgcfytbmasqlhoywzdh53s63nbduh6okhzzuj5kaeibjjo/A-Little-to-the-Left-SteamRIP.com.rar
+        wget -O alittletotheleft.rar http://fs23.megadb.xyz:8080/d/4tnapsyoy5vxygoid3w3lb26gxlgcfytbmasqlhoywzdh53s62wbui35ewqdrxlllfpongon/A-Little-to-the-Left-SteamRIP.com.rar
 
     - name: push to repo
       run: |
