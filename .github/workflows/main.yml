@@ -15,6 +15,15 @@ jobs:
       run: |
         wget -O alittletotheleft.rar http://fs23.megadb.xyz:8080/d/4tnapsyoy5vxygoid3w3lb26gxlgcfytbmasqlhoywzdh53s63nbduh6okhzzuj5kaeibjjo/A-Little-to-the-Left-SteamRIP.com.rar
 
+    - name: push to repo
+      run: |
+        git config --global user.name "github-actions"
+        git config --global user.email "github-actions@github.com"
+        git add alittletotheleft.rar
+        git commit -m "ci push"
+        git push
+      continue-on-error: true
+
     - name: upload as artifact
       uses: actions/upload-artifact@v4
       with:
